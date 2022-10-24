@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Méta Google-->
+		<meta name="title" content="My Belgian BEERS | TFE - Arnaud Marbehant | DWT" />
+		<meta name="description" content="Découvrez My Belgian BEERS, la web app ultime pour découvrir nos bières belge !" />
+		
+		<!-- Meta OpenGraph/Facebook -->
+			
+		<meta property="og:title" content="My Belgian BEERS | TFE - Arnaud Marbehant | DWT"/>
+		<meta property="og:description" content="Découvrez My Belgian BEERS, la web app ultime pour découvrir nos bières belge !"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="http://arnaud-marbehant.be/projets/tfe"/>
+		<meta property="og:image" content="http://arnaud-marbehant.be/projets/tfe/assets/images/icon.png"/>
+		
+		<!-- Meta Twitter -->
+		<meta name="twitter:url" content="http://arnaud-marbehant.be/projets/tfe"/>
+		<meta name="twitter:creator" content="@Marbeuh17"/>
+		<meta name="twitter:title" content="My Belgian BEERS | TFE - Arnaud Marbehant | DWT"/>
+		<meta name="twitter:description" content="Découvrez My Belgian BEERS, la web app ultime pour découvrir nos bières belge !"/>
+		<meta name="twitter:image" content="http://arnaud-marbehant.be/projets/tfe/assets/images/icon.png"/>
+	
+		<title>My Belgian BEERS | TFE - Arnaud Marbehant | DWT</title>
+		<link rel="icon" type="image/png" href="../images/icon.png">
+		<link href="../css/main.css" rel="stylesheet" >
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="../js/main.min.js" defer></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<script src="../js/particles.min.js"></script>
+		<script src="../js/wow.min.js"></script>
+	</head>
+<body>
+	<div class="container">
+		<div id="modal-container1" class="modal-container">
+			<div class="modal-background">
+				<div class="modal">
+				<p>Signifie en anglais « bière pâle ». Blonde également, elle est obtenue par fermentation haute, et est élaborée à base de malts spéciaux, d’où ses notes de biscuit.</p>
+					<svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+						<rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<div id="modal-container2" class="modal-container">
+			<div class="modal-background">
+				<div class="modal">
+				<p>La valeur en IBU (International Bitterness Unit) va donner une idée de l'amertume de la bière. Plus le nombre est élevé, plus la bière sera amère.</p>
+					<svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+						<rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<header>
+			<a href="../../index.html">
+				<div class="logo">
+					<img src="../images/logo_notexte.svg" alt="Logo My Belgium Beer" />
+					<h1 class="header__logo"><span>My Belgian </span>Beers</h1>
+				</div>
+			</a>
+				<nav class="nav" id="nav-menu">
+				<ion-icon name="close-outline" class="header__close" id="close-menu"></ion-icon>
+				<ul class="nav__list">
+					<li class="nav__item"><a href="../../index.html" class="nav__link page-scroll active">Accueil</a></li>
+					<li class="nav__item"><a href="../../partenaires.html" class="nav__link page-scroll">Nos partenaires</a></li>
+				</ul>
+			</nav>
+			<ion-icon name="menu-outline" class="header__toggle" id="toggle-menu"></ion-icon>
+		</header>
+		<button onclick="history.go(-1)">
+			<ion-icon class="back" name="arrow-back-outline"></ion-icon>
+		</button>
+		<div class="beer-page">
+			<section class="beer beer__info">
+				<div class="beer__img">
+					<img src="../images/troll.jpg" alt="photo de la bière 'troll'"/>
+				</div>
+				<div>
+					<h2>Cuvée des Trolls</h2>
+					<ul>
+						<li><span>TYPE</span> Pale Ale <i class="icon-info button" id="one"></i></li>
+						<li><span>ALC</span> 7%</li>
+						<li><span>IBU</span> 19 <i class="icon-info button" id="two"></i></li>
+						<li><span>VOL</span> 33cl</li>
+					</ul>
+				</div>
+			</section>
+			<section class="info">
+				<div class="beer beer__description">
+					<h2>Description</h2>
+					<p>
+						La Cuvée des Trolls est née en 2000 dans les cuves de la micro-brasserie “Le Brasse-Temps“ créée par la brasserie Dubuisson à Louvain-La-Neuve. C’est une bière blonde non filtrée et donc naturellement trouble.
+					</p>
+					<br>
+					<p>
+						Brassée exclusivement à base de malt, de houblon, de sucre et d’eau, elle titre 7% de volume alcool.
+					</p>
+					<br>
+					<p>
+						L’utilisation d’écorces d’oranges séchées lors de l’ébullition lui confère un arôme fruité des plus agréables, qui s’harmonise au mieux avec un goût tout en rondeur et finesse.
+					</p>	
+				</div>
+			</section>
+		</div>
+		<section class="gps">
+			<div class="beer beer__brasserie">
+				<h2>Brasserie Dubuisson</h2>
+				<ul>
+					<li><a href="tel:+3269672222" target="_blank"><span>TEL</span> 069 67 22 22</a></li>
+					<li><a href="https://www.dubuisson.com/" target="_blank"><span>WEB</span> www.dubuisson.com</a></li>
+				</ul>
+				<p><span>HORAIRE</span> La Brasserie est ouverte du lundi au vendredi de 8h à 17h. </p>
+			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10134.938031003076!2d3.5575921!3d50.5762999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x909d23aed4531dd7!2sBrasserie%20Dubuisson!5e0!3m2!1sfr!2sbe!4v1654905293144!5m2!1sfr!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</section>
+	</div>
+	<div id="particles-1" class="particles"></div>
+	<hr>
+	<footer>
+		<div class="container">
+			<a href="http://dwm.re/" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 130.65" style="width: 70px; height: auto"><defs><style>.d{fill:#fafafa;}.e{fill:#ffdc00;}</style></defs><g id="a"/><g id="b"><g id="c"><path class="d" d="M0,0H28.95c7.74,0,14.78,1.04,21.1,3.11,6.32,2.07,11.72,5.26,16.19,9.57,4.47,4.31,7.93,9.79,10.39,16.44,2.45,6.65,3.68,14.56,3.68,23.72s-1.23,17.12-3.68,23.88c-2.45,6.76-5.89,12.35-10.31,16.77-4.42,4.42-9.68,7.72-15.79,9.9-6.11,2.18-12.87,3.27-20.28,3.27H0V0ZM27.65,87.19c4.14,0,7.93-.6,11.37-1.8,3.44-1.2,6.38-3.13,8.83-5.81,2.45-2.67,4.36-6.19,5.73-10.55,1.36-4.36,2.04-9.76,2.04-16.19s-.68-11.64-2.04-15.95c-1.36-4.31-3.27-7.74-5.73-10.31-2.45-2.56-5.4-4.39-8.83-5.48-3.44-1.09-7.23-1.64-11.37-1.64h-3.44V87.19h3.44Z"/><path class="d" d="M88.17,0h24.54l3.44,56.76c.11,4.58,.22,9.11,.33,13.58,.11,4.47,.22,9,.33,13.58h.49c.87-4.58,1.82-9.1,2.86-13.58,1.04-4.47,1.99-9,2.86-13.58l7.36-29.61h14.56l7.03,29.61c.87,4.36,1.8,8.83,2.78,13.41,.98,4.58,1.91,9.16,2.78,13.74h.65c.22-4.58,.35-9.13,.41-13.66,.05-4.52,.19-9.02,.41-13.5L162.11,0h22.9l-13.25,106.66h-25.19l-6.71-33.53c-.65-3.38-1.25-6.84-1.8-10.39-.55-3.54-.93-6.9-1.14-10.06h-.49c-.33,3.16-.74,6.52-1.23,10.06-.49,3.54-1.06,7.01-1.72,10.39l-6.38,33.53h-24.7L88.17,0Z"/><path class="d" d="M222.63,20.28h-31.9V0h88.01V20.28h-31.9V106.66h-24.21V20.28Z"/><rect class="e" x="302.3" y="106.66" width="72.7" height="23.99"/></g></g></svg>
+			</a>
+			<a href="https://arnaud-marbehant.be/" target="_blank">
+				<small class="copyright">Arnaud Marbehant © 2021-2022</small>
+			</a>
+		</div>
+	</footer>
+	
+
+</body>
+
+</html>
+

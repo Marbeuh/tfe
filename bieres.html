@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Méta Google-->
+		<meta name="title" content="My Belgian BEERS | TFE - Arnaud Marbehant | DWT" />
+		<meta name="description" content="Découvrez My Belgian BEERS, la web app ultime pour découvrir nos bières belge !" />
+		
+		<!-- Meta OpenGraph/Facebook -->
+			
+		<meta property="og:title" content="My Belgian BEERS | TFE - Arnaud Marbehant | DWT"/>
+		<meta property="og:description" content="Découvrez My Belgian BEERS, la web app ultime pour découvrir nos bières belge !"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="http://arnaud-marbehant.be/projets/tfe"/>
+		<meta property="og:image" content="http://arnaud-marbehant.be/projets/tfe/assets/images/icon.png"/>
+		
+		<!-- Meta Twitter -->
+		<meta name="twitter:url" content="http://arnaud-marbehant.be/projets/tfe"/>
+		<meta name="twitter:creator" content="@Marbeuh17"/>
+		<meta name="twitter:title" content="My Belgian BEERS | TFE - Arnaud Marbehant | DWT"/>
+		<meta name="twitter:description" content="Découvrez My Belgian BEERS, la web app ultime pour découvrir nos bières belge !"/>
+		<meta name="twitter:image" content="http://arnaud-marbehant.be/projets/tfe/assets/images/icon.png"/>
+	
+		<title>My Belgian BEERS | Bières | TFE - Arnaud Marbehant | DWT</title>
+		<link rel="icon" type="image/png" href="assets/images/icon.png">
+		<link href="assets/css/main.css" rel="stylesheet" >
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="assets/js/main.min.js" defer></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+		<script src="assets/js/particles.min.js"></script>
+		<script src="assets/js/wow.min.js"></script>
+	</head>
+<body>
+	<div class="container">
+		<header>
+			<a href="index.html">
+				<div class="logo">
+					<img src="assets/images/logo_notexte.svg" alt="Logo My Belgium Beer" />
+					<h1 class="header__logo"><span>My Belgian </span>Beers</h1>
+				</div>
+			</a>
+				<nav class="nav" id="nav-menu">
+				<ion-icon name="close-outline" class="header__close" id="close-menu"></ion-icon>
+				<ul class="nav__list">
+					<li class="nav__item"><a href="index.html" class="nav__link page-scroll active">Accueil</a></li>
+					<li class="nav__item"><a href="partenaires.html" class="nav__link page-scroll">Nos partenaires</a></li>
+				</ul>
+			</nav>
+			<ion-icon name="menu-outline" class="header__toggle" id="toggle-menu"></ion-icon>
+		</header>
+		<section class="carte__bar carte">
+			<div class="filter filter--beer">
+				<p>Bières Belge uniquement</p>
+				<label class="switch">
+					<input class="darkmode-checkbox" type="checkbox">
+					<span class="slider"></span>
+				</label>
+			</div>
+			<div class="searchbar">
+				<input id="searchbar" onkeyup="search()" type="text"
+				name="search" placeholder="Rechercher une bière..">
+				<button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+					<svg style="width:24px;height:24px" viewBox="0 0 24 24"><path fill="#666666" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+					</svg>
+				</button>
+			</div>
+			
+			<ul>
+				<li class="beer__bar local"><a href="assets/bieres/abbaye_de_gembloux.html"><h2>Abbaye de Gembloux</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/affligem_0.html"><h2>AFFLIGEM Blond 0,0</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/affligem_triple.html"><h2>Affligem Tripel</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/barbar.html"><h2>Barbãr Blonde</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/battin_brune.html"><h2>Battin brune</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/battin_blonde.html"><h2>Battin extra blonde</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/battin_fruite.html"><h2>Battin fruitée</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/blonden_os.html"><h2>BLONDEN OS</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/bush_caractere.html"><h2>Bush Caractère</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/bush_peche_mel.html"><h2>Bush Pêche Mel</h2></a></li>
+				<li class="beer__bar no-local"><a href="assets/bieres/carlsberg.html"><h2>Carlsberg</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/cherry_chouffe.html"><h2>Cherry Chouffe</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/chimay_bleu.html"><h2>Chimay Bleu</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/chimay_verte.html"><h2>Chimay Verte</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/cornet.html"><h2>Cornet</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/crabbelaer.html"><h2>CRABBELAER</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/cristal.html"><h2>Cristal</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/cristal_0.html"><h2>CRISTAL 0.0</h2></a></li>
+				<li class="beer__bar no-local"><a href="assets/bieres/cubanisto.html"><h2>Cubanisto</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/troll.html"><h2>Cuvée des Trolls</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/delirium_red.html"><h2>Delirium Red</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/delirium_tremens.html"><h2>Delirium Tremens</h2></a></li>
+				<li class="beer__bar no-local"><a href="assets/bieres/desperados.html"><h2>Desperados</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/duvel.html"><h2>Duvel</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/duvel_triple_hop_citra.html"><h2>Duvel Tripel Hop Citra</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/export_13.html"><h2>EXPORT 13 'in 't fleske'</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/Filou.html"><h2>Filou</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/liefmans_fruitesse.html"><h2>FRUITESSE On The Rocks</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/gambrinus.html"><h2>Gambrinus 5.2°</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/gembloux_splash.html"><h2>Gembloux Splash</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/gueuze_framboise.html"><h2>Geuze framboise</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/grisette_tripel.html"><h2>GRISETTE Tripel</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/gruut_ambre.html"><h2>Gruut Ambre</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/gruut_blanche.html"><h2>GRUUT blanche</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/gruut_blonde.html"><h2>Gruut Blonde</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/gueuze.html"><h2>Gueuze Bouchonnee Mort Subite</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/hapkin.html"><h2>HAPKIN</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/hoagarden_blanche.html"><h2>hoagaarden Blanche</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/hoagarden_rosee.html"><h2>Hoegaarden Rosée</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/hommel.html"><h2>HOMMEL</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/julius.html"><h2>Julius</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/jupiler.html"><h2>Jupiler</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/jupiler_0.html"><h2>Jupiler 0.0%</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/kastel_rouge.html"><h2>Kasteel Rouge</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/mort_subite.html"><h2>Kriek Mort Subite</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/kwak.html"><h2>Kwak</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/kwak_rouge.html"><h2>Kwak Rouge</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/arogante.html"><h2>L'AROGANTE</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/empire.html"><h2>L'empire</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/baraque.html"><h2>La Baraque</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/chouffe.html"><h2>La Chouffe</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/guillotine.html"><h2>La Guillotine</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/leffe_blonde.html"><h2>Leffe Blonde</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/leffe_blonde_0.html"><h2>Leffe Blonde 0.0</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/leffe_brune.html"><h2>Leffe Brune</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/leffe_royale_cascade_ipa.html"><h2>Leffe Royale Cascade IPA</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/leffe_ruby.html"><h2>Leffe Ruby</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/leffe_ruby.html"><h2>Leffe Ruby</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/leffe_triple.html"><h2>Leffe Triple</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/liefmans_fruitesse.html"><h2>Liefmans Fruitesse</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/lindemans_pecheresse.html"><h2>Lindemans Pêcheresse</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/martin_ipa.html"><h2>MARTIN'S IPA 44</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/omer.html"><h2>OMER</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/orval.html"><h2>Orval</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/ouwen.html"><h2>OUWEN DUIKER</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/papegaei.html"><h2>PAPEGAEI</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/bush_peche_mel.html"><h2>Pêche Mel Bush</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/rochefort_8.html"><h2>Rochefort 8°</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/rodenbach.html"><h2>RODENBACH</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/st_feuillien.html"><h2>St Feuillien Grand Cru</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/steenuilke.html"><h2>STEENUILKE</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/taras_boulba.html"><h2>TARAS BOULBA</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/triple_karmeliet.html"><h2>Tripel Karmeliet</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/triple_battin.html"><h2>Triple battin</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/triple_anvers.html"><h2>Triple d'Anvers</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/tete_de_mort.html"><h2>Tête de mort</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/urine.html"><h2>Urine</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/vedett_extra_blonde.html"><h2>VEDETT Extra Blonde</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/vicaris_tripel.html"><h2>VICARIS Tripel</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/vieux_temps.html"><h2>Vieux Temps</h2></a></li>
+				<li class="beer__bar local"><a href="assets/bieres/westmall.html"><h2>Westmalle Tripel</h2></a></li>
+			</ul>
+		</section>
+	</div>
+	<div id="particles-1" class="particles"></div>
+	<hr>
+	<footer>
+		<div class="container">
+			<a href="http://dwm.re/" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 130.65" style="width: 70px; height: auto"><defs><style>.d{fill:#fafafa;}.e{fill:#ffdc00;}</style></defs><g id="a"/><g id="b"><g id="c"><path class="d" d="M0,0H28.95c7.74,0,14.78,1.04,21.1,3.11,6.32,2.07,11.72,5.26,16.19,9.57,4.47,4.31,7.93,9.79,10.39,16.44,2.45,6.65,3.68,14.56,3.68,23.72s-1.23,17.12-3.68,23.88c-2.45,6.76-5.89,12.35-10.31,16.77-4.42,4.42-9.68,7.72-15.79,9.9-6.11,2.18-12.87,3.27-20.28,3.27H0V0ZM27.65,87.19c4.14,0,7.93-.6,11.37-1.8,3.44-1.2,6.38-3.13,8.83-5.81,2.45-2.67,4.36-6.19,5.73-10.55,1.36-4.36,2.04-9.76,2.04-16.19s-.68-11.64-2.04-15.95c-1.36-4.31-3.27-7.74-5.73-10.31-2.45-2.56-5.4-4.39-8.83-5.48-3.44-1.09-7.23-1.64-11.37-1.64h-3.44V87.19h3.44Z"/><path class="d" d="M88.17,0h24.54l3.44,56.76c.11,4.58,.22,9.11,.33,13.58,.11,4.47,.22,9,.33,13.58h.49c.87-4.58,1.82-9.1,2.86-13.58,1.04-4.47,1.99-9,2.86-13.58l7.36-29.61h14.56l7.03,29.61c.87,4.36,1.8,8.83,2.78,13.41,.98,4.58,1.91,9.16,2.78,13.74h.65c.22-4.58,.35-9.13,.41-13.66,.05-4.52,.19-9.02,.41-13.5L162.11,0h22.9l-13.25,106.66h-25.19l-6.71-33.53c-.65-3.38-1.25-6.84-1.8-10.39-.55-3.54-.93-6.9-1.14-10.06h-.49c-.33,3.16-.74,6.52-1.23,10.06-.49,3.54-1.06,7.01-1.72,10.39l-6.38,33.53h-24.7L88.17,0Z"/><path class="d" d="M222.63,20.28h-31.9V0h88.01V20.28h-31.9V106.66h-24.21V20.28Z"/><rect class="e" x="302.3" y="106.66" width="72.7" height="23.99"/></g></g></svg>
+			</a>
+			<a href="https://arnaud-marbehant.be/" target="_blank">
+				<small class="copyright">Arnaud Marbehant © 2021-2022</small>
+			</a>
+		</div>
+	</footer>
+	
+
+</body>
+
+</html>
+

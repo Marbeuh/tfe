@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Méta Google-->
+	<meta name="title" content="My Belgian BEERS | TFE - Arnaud Marbehant | DWT" />
+	<meta name="description" content="Découvrez My Belgian BEERS, la web app ultime pour découvrir nos bières belge !" />
+	
+	<!-- Meta OpenGraph/Facebook -->
+        
+	<meta property="og:title" content="My Belgian BEERS | TFE - Arnaud Marbehant | DWT"/>
+	<meta property="og:description" content="Découvrez My Belgian BEERS, la web app ultime pour découvrir nos bières belge !"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="http://arnaud-marbehant.be/projets/tfe"/>
+	<meta property="og:image" content="http://arnaud-marbehant.be/projets/tfe/assets/images/icon.png"/>
+	
+	<!-- Meta Twitter -->
+	<meta name="twitter:url" content="http://arnaud-marbehant.be/projets/tfe"/>
+	<meta name="twitter:creator" content="@Marbeuh17"/>
+	<meta name="twitter:title" content="My Belgian BEERS | TFE - Arnaud Marbehant | DWT"/>
+	<meta name="twitter:description" content="Découvrez My Belgian BEERS, la web app ultime pour découvrir nos bières belge !"/>
+	<meta name="twitter:image" content="http://arnaud-marbehant.be/projets/tfe/assets/images/icon.png"/>
+
+	<title>My Belgian BEERS | Accueil | TFE - Arnaud Marbehant | DWT</title>
+	<link rel="icon" type="image/png" href="assets/images/icon.png">
+	<link href="assets/css/main.css" rel="stylesheet" >
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="assets/js/main.min.js" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script src="assets/js/particles.min.js"></script>
+	<script src="assets/js/wow.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header class="section__header">
+			<a href="index.html">
+				<div class="logo">
+					<img src="assets/images/logo_notexte.svg" alt="Logo My Belgium Beer" />
+					<h1 class="header__logo"><span>My Belgian </span>Beers</h1>
+				</div>
+			</a>
+				<nav class="nav" id="nav-menu">
+				<ion-icon name="close-outline" class="header__close" id="close-menu"></ion-icon>
+				<ul class="nav__list">
+					<li class="nav__item"><a href="index.html" class="nav__link page-scroll active">Accueil</a></li>
+					<li class="nav__item"><a href="partenaires.html" class="nav__link page-scroll">Nos partenaires</a></li>
+				</ul>
+			</nav>
+			<ion-icon name="menu-outline" class="header__toggle" id="toggle-menu"></ion-icon>
+		</header>
+	</div>
+	<section id="home" class="header-hero bg_cover" style="background-image: url(assets/images/banner.svg)">
+		<div class="container">
+			<div class="justify-content-center">
+				<div class="header-hero-content text-center">
+					<h3 class="header-sub-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0s">
+						Boire une bière&nbsp;? Oui&nbsp;!
+					</h3>
+					<h2 class="header-title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.3s" >
+						Mais locale c'est mieux&nbsp;!
+					</h2>
+					<p class="text wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
+						Découvrez une large gamme de bières belges ainsi que les bières étrangères présentées à la carte de nos partenaires.
+					</p>
+					<a href="#features" class="main-btn wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="1.1s">
+					En savoir plus
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-hero-image text-center" data-wow-duration="1.3s" data-wow-delay="1.4s">
+			<img src="assets/images/header-hero.png" alt="hero" />
+		</div>
+		<div id="particles-1" class="particles"></div>
+	</section>
+	<section id="features" class="services-area pt-120">
+		<div class="container">
+		  <div class="justify-content-center">
+			<div class="row">
+			  <div class="single-services text-center " data-wow-duration="1s" data-wow-delay="0.2s">
+				<div class="services-icon">
+				  <img class="shape" src="assets/images/services-shape.svg" alt="shape"/>
+				  <img class="shape-1" src="assets/images/services-shape-1.svg" alt="shape"/>
+				  <ion-icon name="navigate-circle-outline"></ion-icon>
+				</div>
+				<div class="services-content mt-30">
+				  <h4 class="services-title">
+					<a href="partenaires.html">5 partenaires</a>
+				  </h4>
+				  <p class="text">
+					Nos bars partenaires vous permettent de découvrir les bières de leurs régions. Leurs nombres continuent de s’agrandir de jour en jour.
+				  </p>
+				  <a class="more" href="partenaires.html"
+					>En savoir plus <ion-icon name="arrow-forward-outline"></ion-icon>
+				  </a>
+				</div>
+			  </div>
+			  <div class="single-services text-center " data-wow-duration="1s" data-wow-delay="0.5s" >
+				<div class="services-icon">
+				  <img class="shape" src="assets/images/services-shape.svg" alt="shape"/>
+				  <img class="shape-1" src="assets/images/services-shape-2.svg" alt="shape"/>
+				  <ion-icon name="book-outline"></ion-icon>
+				</div>
+				<div class="services-content mt-30">
+				  <h4 class="services-title">
+					<a href="bieres.html">79 bières répertoriées</a>
+				  </h4>
+				  <p class="text">
+					Vous retrouverez l’ensemble des bières servies par nos partenaires qu’elles soient belge ou étrangères.
+				  </p>
+				  <a class="more" href="bieres.html"
+					>En savoir plus <ion-icon name="arrow-forward-outline"></ion-icon>
+				  </a>
+				</div>
+			  </div>
+			  <div class="single-services text-center " data-wow-duration="1s" data-wow-delay="0.8s">
+				<div class="services-icon">
+				  <img class="shape" src="assets/images/services-shape.svg" alt="shape"/>
+				  <img class="shape-1" src="assets/images/services-shape-3.svg" alt="shape"/>
+				  <ion-icon name="beer-outline"></ion-icon>
+				</div>
+				<div class="services-content mt-30">
+				  <h4 class="services-title">
+					<a href="bieres.html">Informations</a>
+				  </h4>
+				  <p class="text">
+					Chacune des bières cataloguées dispose d’une fiche de renseignement sur laquelle diverses informations techniques sont présentes.
+				  </p>
+				  <a class="more" href="bieres.html"
+					>En savoir plus <ion-icon name="arrow-forward-outline"></ion-icon>
+				  </a>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  <section id="about" class="pt-120">
+		<div class="about-area">
+		  <div class="container">
+			<div class="row_about row order">
+				<div class="about-content  wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+				  <div class="section-title">
+					<div class="line"></div>
+					<h3 class="title">
+						My Belgian Beers
+					</h3>
+				  </div>
+				  <p class="text">
+					Vous êtes actuellement dans un bar et vous vous demandez d'où vient votre bière ou encore ce qu'elle contient ?Vous planifiez un voyage et chercher un bar du coin qui propose des bières ou vous pourrez visiter la brasserie pendant votre séjour ?
+				  </p>
+				</div>
+				<div class="about-image text-center  wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
+				  <img src="assets/images/about1.svg" alt="about" />
+				</div>
+			</div>
+		  </div>
+		</div>
+		<div class="about-area pt-120">
+		  <div class="container">
+			<div class="row_about row">
+				<div class="about-content ms-lg-auto mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+				  <div class="section-title">
+					<div class="line"></div>
+					<h3 class="title">
+						Nous sommes là pour vous !
+					</h3>
+				  </div>
+				  <p class="text">
+					A l'aide de ses établissements partenaires , retrouvez les bières à la carte de l'établissement dans lequel vous trouverez ainsi une description de celle-ci, les informations de la brasserie et les points de ventes ou la bière sélectionnée est disponible.
+				  </p>
+				</div>
+				<div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
+				  <img src="assets/images/about2.svg" alt="about" />
+				</div>
+			</div>
+		  </div>
+		</div>
+		<div class="about-area pt-120">
+		  <div class="container">
+			<div class="row_about row order">
+				<div class="about-content mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+				  <div class="section-title">
+					<div class="line"></div>
+					<h3 class="title">
+						Vous êtes dans l'un de nos établissements partenaires ?
+					</h3>
+				  </div>
+				  <p class="text">
+					Il vous suffit de scanner le QR code présent pour retrouvez toutes les informations dont vous avez besoin.
+				  </p>
+				</div>
+				<div
+				  class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
+				  <img src="assets/images/about3.svg" alt="about" />
+				</div>
+			</div>
+		  </div>
+		</div>
+		<div class="about-area pt-120">
+			<div class="container">
+			  <div class="row_about row">
+				  <div class="about-content ms-lg-auto mt-50 wow fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+					<div class="section-title">
+					  <div class="line"></div>
+					  <h3 class="title">
+						Vous cherchez un bar qui vous propose une bière locale ?
+					  </h3>
+					</div>
+					<p class="text">
+						Rendez-vous sur notre page partenaires pour y trouver l'établissement qui sera en mesure de vous servir ce que vous désirez.
+					</p>
+				  </div>
+				  <div class="about-image text-center mt-50 wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.5s">
+					<img src="assets/images/about4.svg" alt="about" />
+				  </div>
+			  </div>
+			</div>
+		  </div>
+	  </section>
+	<hr>
+	<footer>
+		<div class="container">
+			<a href="http://dwm.re/" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 130.65" style="width: 70px; height: auto"><defs><style>.d{fill:#fafafa;}.e{fill:#ffdc00;}</style></defs><g id="a"/><g id="b"><g id="c"><path class="d" d="M0,0H28.95c7.74,0,14.78,1.04,21.1,3.11,6.32,2.07,11.72,5.26,16.19,9.57,4.47,4.31,7.93,9.79,10.39,16.44,2.45,6.65,3.68,14.56,3.68,23.72s-1.23,17.12-3.68,23.88c-2.45,6.76-5.89,12.35-10.31,16.77-4.42,4.42-9.68,7.72-15.79,9.9-6.11,2.18-12.87,3.27-20.28,3.27H0V0ZM27.65,87.19c4.14,0,7.93-.6,11.37-1.8,3.44-1.2,6.38-3.13,8.83-5.81,2.45-2.67,4.36-6.19,5.73-10.55,1.36-4.36,2.04-9.76,2.04-16.19s-.68-11.64-2.04-15.95c-1.36-4.31-3.27-7.74-5.73-10.31-2.45-2.56-5.4-4.39-8.83-5.48-3.44-1.09-7.23-1.64-11.37-1.64h-3.44V87.19h3.44Z"/><path class="d" d="M88.17,0h24.54l3.44,56.76c.11,4.58,.22,9.11,.33,13.58,.11,4.47,.22,9,.33,13.58h.49c.87-4.58,1.82-9.1,2.86-13.58,1.04-4.47,1.99-9,2.86-13.58l7.36-29.61h14.56l7.03,29.61c.87,4.36,1.8,8.83,2.78,13.41,.98,4.58,1.91,9.16,2.78,13.74h.65c.22-4.58,.35-9.13,.41-13.66,.05-4.52,.19-9.02,.41-13.5L162.11,0h22.9l-13.25,106.66h-25.19l-6.71-33.53c-.65-3.38-1.25-6.84-1.8-10.39-.55-3.54-.93-6.9-1.14-10.06h-.49c-.33,3.16-.74,6.52-1.23,10.06-.49,3.54-1.06,7.01-1.72,10.39l-6.38,33.53h-24.7L88.17,0Z"/><path class="d" d="M222.63,20.28h-31.9V0h88.01V20.28h-31.9V106.66h-24.21V20.28Z"/><rect class="e" x="302.3" y="106.66" width="72.7" height="23.99"/></g></g></svg>
+			</a>
+			<a href="https://arnaud-marbehant.be/" target="_blank">
+				<small class="copyright">Arnaud Marbehant © 2021-2022</small>
+			</a>
+		</div>
+	</footer>
+	<a href="#" class="back-to-top"> <ion-icon name="arrow-up-outline"></ion-icon> </a>
+</body>
+</html>
+
